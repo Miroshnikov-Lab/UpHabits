@@ -1,13 +1,19 @@
-
 import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        VStack {
-            Text("Settings")
-                .font(.largeTitle)
-                .padding()
-            Spacer()
+        ZStack {
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+            VStack {
+                Text("Settings")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+            }
         }
     }
 }
