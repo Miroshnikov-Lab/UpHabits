@@ -1,13 +1,19 @@
-
 import SwiftUI
 
 struct ShopView: View {
     var body: some View {
-        VStack {
-            Text("Shop")
-                .font(.largeTitle)
-                .padding()
-            Spacer()
+        ZStack {
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+            VStack {
+                Text("Shop")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+            }
         }
     }
 }

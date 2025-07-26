@@ -1,13 +1,19 @@
-
 import SwiftUI
 
 struct LevelUpView: View {
     var body: some View {
-        VStack {
-            Text("Level Up")
-                .font(.largeTitle)
-                .padding()
-            Spacer()
+        ZStack {
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+            VStack {
+                Text("Level Up")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+            }
         }
     }
 }
