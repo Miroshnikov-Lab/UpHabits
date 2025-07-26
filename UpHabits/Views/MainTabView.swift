@@ -35,7 +35,7 @@ struct MainTabView: View {
             
             ShopView()
                 .tabItem {
-                    Image(systemName: "cart.fill")
+                    Image(systemName: "tab_shop")
                     Text("Shop")
                 }
             
